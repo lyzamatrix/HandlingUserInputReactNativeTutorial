@@ -10,7 +10,7 @@ export default class App extends React.Component {
     }
   }
 
-  onChangeText(text) {
+  changeText(text) {
     this.setState({
       text: text
     });
@@ -21,7 +21,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <TextInput
-          onChangeText={ (text) => this.onChageText(text)}
+          onChangeText={ (text) => this.changeText(text)}
           placeholder={ 'Enter text here' }
           value={this.state.text}
         />
